@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basics of Web Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <center>
+    <h1>Basics of Web Development</h1>
+    <nav>
+      <a href="#html" >HTML</a>
+      <a href="#css" >CSS</a>
+      <a href="#js" >JavaScript</a>
+    </nav>
+    </center>
+  </header>
+
+  <main>
+    <section id="html">
+      <center>
+      <h2>What is HTML?</h2>
+      <p><em>HTML(HyperText Markup Language) is the standard language for creating web pages. It defines the content and structure of web content. It is often assisted by technologies such as Cascading
+         Style Sheets (CSS) and scripting languages such as JavaScript, a programming language.</em></p><br>
+      <hr>
+      <marquee >To know more about HTML(hyper text markup language). click the icon </marquee>
+      <hr>
+      <a href="https://en.wikipedia.org/wiki/HTML"><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" width="200" height="200"/></a>
+      </center>
+    </section>
+    <hr>
+    <section id="css">
+      <center>
+      <h2>What is CSS?</h2>
+      <p><em>CSS(Cascading Style Sheets) is used to style and layout web pages — including colors, fonts, and spacing.Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML 
+        (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</em></p>
+      <hr>
+      <marquee >To know more about CSS(Casacading Style Sheets). click the icon </marquee>
+      <hr>
+      <a href="https://en.wikipedia.org/wiki/CSS"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo" width="200" height="200"/></a>
+      </center>
+    </section>
+    <hr>
+    <section id="js">
+      <center>
+      <h2>What is JavaScript?</h2>
+      <p><em>JavaScript is a programming language used to make websites interactive. JS, is a
+         programming language and core technology of the World Wide Web, alongside HTML and CSS. Ninety-nine percent of websites use JavaScript on the client side for webpage behavior.</em></p>
+      <hr>
+      <marquee >To know more about JavaScript. click the icon </marquee>
+      <hr>
+       <a href="https://en.wikipedia.org/wiki/JavaScript"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" width="200" height="200"/></a>
+      </center>
+    </section>
+    <hr>
+    <div class="button-section">
+      <button onclick="showMessage()">Click for Alert</button>
+    </div>
+
+     <section><center>
+      <h2 onclick="toggleSection('feedback')">📝 Feedback</h2>
+      <div id="feedback" class="content">
+        <form onsubmit="return submitFeedback()">
+          <ul>
+          <li><label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required /></li><br><hr>
+
+          <li><label for="comments">Your Comments:</label>
+          <textarea id="comments" name="comments" rows="4" required></textarea></li><br><hr>
+          
+
+          <li><label for="rating">Rating:</label>
+          <select id="rating" name="rating" required>
+            <option value="">Choose one</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select></li>
+          </ul>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </div>
+      </center>
+    </section>
+  </main>
+  <hr>
+  <footer>
+    <p>Made for Web Dev Interns</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">Learn more</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
